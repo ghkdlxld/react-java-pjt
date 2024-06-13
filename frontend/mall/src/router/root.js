@@ -12,7 +12,7 @@ const About = lazy(() => import("../pages/AboutPage"))
 const root = createBrowserRouter([
   // 객체 형태로 넣어줌
   {
-    path: "", // 경로
+    path: "", // 경로, 빈경로=맨처음 페이지
     element: <Suspense fallback={Loading}><Main/></Suspense> // 보여줄 컴포넌트
   },
   {
