@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Link의 연결은 router에서 지정해준다
 function BasicMenu(props) {
   return (
     <nav ud='navbar' className={'flex bg-blue-300'}>
@@ -13,6 +14,10 @@ function BasicMenu(props) {
           </li>
           <li className={'pr-6 text-2xl'}>
             <Link to={'/about'}>About</Link>
+          </li>
+          <li className={'pr-6 text-2xl'}>
+            {/* 슬래쉬를 붙이는 이유? */}
+            <Link to={'/todo/'}>Todo</Link>
           </li>
         </ul>
       </div>
